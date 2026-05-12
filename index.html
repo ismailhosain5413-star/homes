@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homes Services</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#050805;
+    color:#fff;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 60px;
+    background:#0a0f0a;
+    border-bottom:1px solid #0f3d0f;
+}
+
+nav h1{ color:#55ff55; }
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#aaa;
+}
+nav a:hover{ color:#55ff55; }
+
+/* HERO */
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px;
+    background:linear-gradient(to right,#020402,#0a140a);
+}
+
+.hero-text{ max-width:500px; }
+
+.hero-text span{
+    color:#55ff55;
+    font-size:14px;
+}
+
+.hero-text h1{
+    font-size:48px;
+    margin:15px 0;
+}
+
+.hero-text p{
+    opacity:0.7;
+    margin-bottom:20px;
+}
+
+/* BUTTONS */
+.btn{
+    padding:12px 25px;
+    border:none;
+    cursor:pointer;
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.primary{
+    background:#55ff55;
+    color:#000;
+}
+
+.secondary{
+    border:1px solid #55ff55;
+    background:transparent;
+    color:#55ff55;
+}
+
+/* HERO IMAGE FIXED */
+.hero img{
+    width:500px;
+    border-radius:10px;
+    box-shadow:0 0 30px rgba(0,255,0,0.2);
+}
+
+/* SECTION */
+.section{ padding:60px; }
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.box{
+    background:#0a0f0a;
+    border:1px solid #1a3f1a;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(0,255,0,0.1);
+}
+
+.title{
+    margin-bottom:20px;
+    color:#55ff55;
+}
+
+.price{
+    font-size:50px;
+    color:#55ff55;
+}
+
+ul{ list-style:none; }
+
+ul li{
+    margin:10px 0;
+    color:#ccc;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    padding:40px;
+}
+
+.contact a{
+    color:#55ff55;
+    font-size:18px;
+    text-decoration:none;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+    .hero img{
+        margin-top:30px;
+        width:100%;
+    }
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h1>Homes Management Services</h1>
+<div>
+<a href="#">Home</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+<div class="hero-text">
+<span>PROFESSIONAL MINECRAFT</span>
+<h1>SERVER MANAGEMENT & DEVELOPMENT</h1>
+<p>We build, configure and manage high-performance Minecraft servers.</p>
+
+<!-- FIXED BUTTON -->
+<a href="mailto:homesmanage@gmail.com">
+<button class="btn primary">Get Started</button>
+</a>
+
+<p style="margin-top:15px; color:#55ff55;">
+Discord: homes0908
+</p>
+</div>
+
+<!-- FIXED IMAGE (WORKING) -->
+<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84f6d3c7-19b3-471c-99b3-ebe943ca814d/djcoyoa-d6dc0a86-f805-40f2-8ec1-024328fe2bb0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi84NGY2ZDNjNy0xOWIzLTQ3MWMtOTliMy1lYmU5NDNjYTgxNGQvZGpjb3lvYS1kNmRjMGE4Ni1mODA1LTQwZjItOGVjMS0wMjQzMjhmZTJiYjAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lVIM07pgrODoyunzhxVUtqsfwzDGjd554T2ItlGdA6k">
+
+</div>
+
+<!-- CONTENT -->
+<div class="section">
+<div class="grid">
+
+<!-- PRICING -->
+<div class="box">
+<h2 class="title">💰 Pricing</h2>
+
+<h3>Growth Package</h3>
+<div class="price">$25</div>
+
+<p>One-time payment until your server becomes famous.</p>
+<p style="color:#55ff55;">Then $25/month</p>
+
+</div>
+
+<!-- WORK -->
+<div class="box">
+<h2 class="title">⭐ Previous Work's</h2>
+
+<ul>
+<li>✔ Manager @ MineRush</li>
+<li>✔ Manager @ VipMc </li>
+<li>✔ Manager @ FaithMc</li>
+<li>✔ Dev @ VoltMc</li>
+<li>✔ Dev @ VetalMc</li>
+<li>✔ Dev @ SnowSmp</li>
+<li>✔ Dev @ Minecave</li>
+<li>✔ Dev @ HayFun</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+<footer style="
+    background:#000;
+    color:#fff;
+    padding:30px 15px;
+    text-align:center;
+    font-family:'Segoe UI', Arial, sans-serif;
+    border-top:1px solid #222;
+">
+
+  <div style="max-width:800px; margin:auto;">
+
+    <p style="
+        margin:0;
+        font-size:16px;
+        font-weight:500;
+        letter-spacing:0.5px;
+    ">
+      © 2026 <span style="color:#fff;">Homes Management Services</span>
+    </p>
+
+    <p style="
+        margin:10px 0;
+        font-size:14px;
+        color:#ccc;
+    ">
+      All Rights Reserved
+    </p>
+
+    <div style="
+        margin:15px 0;
+        font-size:14px;
+        line-height:1.8;
+    ">
+      <a href="mailto:homesmanage@gmail.com" style="
+          color:#fff;
+          text-decoration:none;
+          border-bottom:1px solid #8b0000;
+          padding-bottom:2px;
+      ">homesmanage@gmail.com</a>
+
+      <span style="color:#444;"> | </span>
+
+      <span style="color:#fff;">Discord: homes0908</span>
+
+      <span style="color:#444;"> | </span>
+
+      <a href="https://wa.me/8801814529392" target="_blank" style="
+          color:#fff;
+          text-decoration:none;
+          border-bottom:1px solid #8b0000;
+          padding-bottom:2px;
+      ">+8801814529392</a>
+    </div>
+
+    <p style="
+        margin-top:15px;
+        font-size:12px;
+        color:#777;
+        letter-spacing:0.5px;
+    ">
+      Copyright holding under <span style="color:#aaa;">Estrovia Private Limited</span>
+    </p>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
